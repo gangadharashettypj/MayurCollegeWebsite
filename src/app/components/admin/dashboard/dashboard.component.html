@@ -7,7 +7,7 @@
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Queries</button></li>
-   
+
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="v-pills-announcements-tab" data-bs-toggle="pill" data-bs-target="#v-pills-announcements" type="button" role="tab" aria-controls="v-pills-announcements" aria-selected="false">Announcements</button></li>
 
@@ -15,22 +15,22 @@
             <button class="nav-link" id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false">Profile</button></li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="v-pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gallery" type="button" role="tab" aria-controls="v-pills-gallery" aria-selected="false">Gallery</button></li>
-    
+
 
 
   </ul>
 <div class="d-flex align-items-start mx-3 my-3">
     <div class="nav sidebar flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-      
+
         <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</button>
 
       <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Applications</button>
-     
+
       <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Queries</button>
 
       <button class="nav-link" id="v-pills-announcements-tab" data-bs-toggle="pill" data-bs-target="#v-pills-announcements" type="button" role="tab" aria-controls="v-pills-announcements" aria-selected="false">Announcements</button>
 
-      
+
       <button class="nav-link" id="v-pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gallery" type="button" role="tab" aria-controls="v-pills-gallery" aria-selected="false">Gallery</button>
 
       <button class="nav-link" id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false">Profile</button>
@@ -43,32 +43,32 @@
 
 
 
-  
+
 
     <div class="container">
-    
+
         <div class="tab-content" id="v-pills-tabContent">
       <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
 
-       
 
-       
+
+
        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
-       
-      
-       
-       
+
+
+
+
        <div class="grey-bg container-fluid">
          <section id="minimal-statistics">
            <div class="row">
              <div class="col-12 mt-3 mb-4">
                <h4 class="text-uppercase">Welcome {{user.user.username}}</h4>
-              
+
              </div>
            </div>
            <div class="row">
-             <div class="col-xl-3 col-sm-6 col-12"> 
+             <div class="col-xl-3 col-sm-6 col-12">
                <div class="card">
                  <div class="card-content">
                    <div class="card-body">
@@ -137,7 +137,7 @@
                </div>
              </div>
            </div>
-         
+
            <!-- <div class="row">
              <div class="col-xl-3 col-sm-6 col-12">
                <div class="card">
@@ -173,7 +173,7 @@
                  </div>
                </div>
              </div>
-         
+
            </div> -->
           </section>
 </div>
@@ -198,7 +198,7 @@
             <div class="col-md-4" *ngFor="let i of applications">
                 <div class="card shadow mb-4">
                     <div class="card-body">
-                      
+
                         <p><strong>Full Name:</strong> {{ i.fullName }}</p>
                         <p><strong>Email:</strong> <a href="mailto:{{ i.email }}" class="mail"> {{ i.email }}</a></p>
                         <p><strong>Phone:</strong> {{ i.phone }}</p>
@@ -217,10 +217,10 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
 </div>
-      
+
       <div class="tab-pane fade my-4" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
         <h4 class="text-uppercase">Message from Contact Form</h4>
         <div class="table-responsive">
@@ -263,7 +263,7 @@
                     <th>Date</th>
                     <th>Time</th>
                     <th>Actions</th>
-    
+
                 </tr>
             </thead>
             <tbody>
@@ -278,7 +278,7 @@
                         <button class="btn btn-sm btn-danger my-auto mx-auto" (click)="deleteAnnoncemnent(i._id)">Delete</button>
                       </div>
                     </td>
-                    
+
                 </tr>
             </tbody>
         </table>
@@ -406,7 +406,7 @@
             </div>
             <!-- Add a submit button or other form controls here -->
           </form>
-          
+
 
 
       </div>
@@ -439,7 +439,7 @@
                   <label for="description" class="form-label">Description</label>
                   <input type="text" class="form-control" id="description" name="description" required [(ngModel)]="description_edit">
                 </div>
-                
+
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="month" class="form-label">Month</label>
@@ -478,7 +478,7 @@
                     <option value="2033">2033</option>
                     <option value="2034">2034</option>
                     <option value="2035">2035</option>
-  
+
                   </select>
                 </div>
               </div>
@@ -518,7 +518,7 @@
                     <option value="29">29</option>
                     <option value="30">30</option>
                     <option value="31">31</option>
-  
+
                     <!-- Generate dates dynamically from 1 to 31 -->
                   </select>
                 </div>
@@ -536,9 +536,9 @@
               </div></div>
               <!-- Add a submit button or other form controls here -->
             </form>
-            
-  
-  
+
+
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -575,8 +575,8 @@
             <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
           </div>
         </div>
-       
-       
+
+
         <div class="container  d-flex justify-content-center">
 
           <div class="card profile p-3">
@@ -588,11 +588,11 @@
               </div>
 
               <div class="ml-3 w-100">
-                  
+
                  <h4 class="mb-0 mt-0">{{user.user.username}}</h4>
                  <span>{{user.user.email}}</span>
 
-             
+
 
 
                  <div class="button mt-2 d-flex flex-row align-items-center">
@@ -600,22 +600,22 @@
                   <button class="btn btn-sm btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#changepassword">Change Password</button>
                   <button class="btn btn-sm btn-outline-primary w-100 ml-2"data-bs-toggle="modal" data-bs-target="#changepassword1">Add Users</button>
 
-                     
+
                  </div>
 
 
               </div>
 
-                  
+
               </div>
-              
+
           </div>
-           
+
        </div>
-    
-        
-        
-        
+
+
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="changepassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -689,11 +689,11 @@
 
 
         </div>
-        
-        
-        
-        
-        
+
+
+
+
+
         <!--
         <div class="table-responsive">
             <table class="table  table-hover">
@@ -703,8 +703,8 @@
                         <th>Description</th>
                         <th>Date</th>
                         <th>Actions</th>
-                        
-        
+
+
                     </tr>
                 </thead>
                 <tbody>
@@ -712,7 +712,7 @@
                         <td>{{ i.title }}</td>
                         <td> {{ i.description }}</td>
                         <td>{{i.date}} {{i.month}} {{i.year}}</td>
-                        
+
                         <td style="text-align: center;">
                             <button class="btn btn-outline-primary my-auto"data-bs-toggle="modal" data-bs-target="#addEvent">Add</button>
                     <button class="btn btn-outline-success my-auto mx-1"data-bs-toggle="modal" data-bs-target="#editEvent"(click)='editEv(i)'>Edit</button>
@@ -742,9 +742,9 @@
                   <label for="description" class="form-label">Description</label>
                   <input type="text" class="form-control" id="description" name="description_event" required [(ngModel)]="description_event">
                 </div>
-             
-            
-            
+
+
+
 
               <div class="row mb-3">
                 <div class="col-md-6">
@@ -784,7 +784,7 @@
                     <option value="2033">2033</option>
                     <option value="2034">2034</option>
                     <option value="2035">2035</option>
-  
+
                   </select>
                 </div>
               </div>
@@ -824,18 +824,18 @@
                     <option value="29">29</option>
                     <option value="30">30</option>
                     <option value="31">31</option>
-  
-                    
+
+
                   </select>
                 </div>
-              
-         
+
+
               </div></div>
-      
+
             </form>
-            
-  
-  
+
+
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -844,9 +844,9 @@
       </div>
     </div>
   </div>
-  
-  
-  
+
+
+
 
   <div class="modal fade" id="editEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
@@ -905,7 +905,7 @@
                       <option value="2033">2033</option>
                       <option value="2034">2034</option>
                       <option value="2035">2035</option>
-    
+
                     </select>
                   </div>
                 </div>
@@ -945,18 +945,18 @@
                       <option value="29">29</option>
                       <option value="30">30</option>
                       <option value="31">31</option>
-    
-                  
+
+
                     </select>
                   </div>
-                 
-               
+
+
                 </div>
-       
+
               </form>
-              
-    
-    
+
+
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -965,10 +965,10 @@
         </div>
       </div>
     </div>-->
-  
+
 
     </div>
-    
+
 
     <div class="tab-pane fade" id="v-pills-gallery" role="tabpanel" aria-labelledby="v-pills-gallery-tab" tabindex="0">
 
@@ -992,13 +992,13 @@
           <button type="button" class="btn btn-primary" (click)="onSubmitImage()">Upload</button>
         </form>
       </div>
-      
+
 
 
     <div class="row my-3">
         <div class="col-md-4 mb-4" *ngFor="let image of images">
           <div class="card">
-            <img class="card-img-top image-size" [src]="'http://localhost:3000/uploads/' + image.image" alt="{{ image.title }}">
+            <img class="card-img-top image-size" [src]="'https://mayurcollegewebsite.onrender.com/uploads/' + image.image" alt="{{ image.title }}">
             <div class="card-body">
               <h5 class="card-title">{{ image.title }}</h5>
               <p class="card-text">{{ image.description }}</p>
@@ -1007,12 +1007,12 @@
           </div>
         </div>
       </div>
-      
-      
+
+
   </div>
 
-  
-        
+
+
     </div>
 
 

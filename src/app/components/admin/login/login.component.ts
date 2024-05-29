@@ -4,38 +4,34 @@ import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-
   username: string = '';
   password: string = '';
-  errormessage=''
-user:any
-  constructor(private http: HttpClient,private route:Router) {}
+  errormessage = '';
+  user: any;
+  constructor(private http: HttpClient, private route: Router) {}
 
   onSubmit() {
     const formData = { username: this.username, password: this.password };
 
-    this.http.post('http://localhost:3000/login', formData)
+    this.http
+      .post('https://mayurcollegewebsite.onrender.com/login', formData)
       .subscribe(
-        response => {
-          this.user=response
+        (response) => {
+          this.user = response;
           console.log('Login successful:');
-          if(this.user!=null)
-          {
+          if (this.user != null) {
             localStorage.setItem('user', JSON.stringify(response));
-            this.route.navigateByUrl('/dashboard')
+            this.route.navigateByUrl('/dashboard');
           }
         },
-        
-        error => {
-          this.errormessage=error.error.error
+
+        (error) => {
+          this.errormessage = error.error.error;
           console.error('Login failed:', error);
         }
-        
       );
-   
-
   }
 }

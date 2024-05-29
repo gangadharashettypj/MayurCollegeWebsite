@@ -12,7 +12,7 @@ export class ContactComponent {
   email: string = '';
   subject:string='';
   message:string='';
-  
+
 error=''
 
   onSubmit() {
@@ -27,30 +27,30 @@ error=''
     return;
       }
 
-      
+
       if (!/^[\w\.-]+@[\w\.-]+\.\w+$/.test(this.email)) {
         this.error = 'Invalid email address format.';
         $('#errorToast').toast('show');
         return;
       }
-      
+
       if (!/^[A-Za-z\s]+$/.test(this.fullname)) {
         this.error = 'Full name can only contain letters and spaces.';
         $('#errorToast').toast('show');
         return;
       }
 
-   
+
       const formData = {
         fullName: this.fullname,
         email: this.email,
         subject: this.subject,
         message: this.message,
-        
+
       };
 
       // Send formData to your backend using HttpClient
-      this.http.post('http://localhost:3000/contact', formData).subscribe(
+      this.http.post('https://mayurcollegewebsite.onrender.com/contact', formData).subscribe(
         response => {
           console.log('Application submitted successfully', response);
           this.fullname = '';
@@ -77,10 +77,10 @@ declare var $: any;
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
   fullname: string = '';
   email: string = '';
   subject: string = '';
@@ -119,22 +119,23 @@ export class ContactComponent {
     };
 
     // Send formData to your backend using HttpClient
-    this.http.post('http://localhost:3000/contact', formData).subscribe(
-      response => {
-        console.log('Message sent successfully', response);
-        // Reset the form or show success message to the user
-        this.fullname = '';
-        this.email = '';
-        this.subject = '';
-        this.message = '';
-        $('#successToast').toast('show');
-      },
-      error => {
-        console.error('Error sending message', error);
-        // Handle error scenario
-        $('#errorToast').toast('show');
-      }
-    );
+    this.http
+      .post('https://mayurcollegewebsite.onrender.com/contact', formData)
+      .subscribe(
+        (response) => {
+          console.log('Message sent successfully', response);
+          // Reset the form or show success message to the user
+          this.fullname = '';
+          this.email = '';
+          this.subject = '';
+          this.message = '';
+          $('#successToast').toast('show');
+        },
+        (error) => {
+          console.error('Error sending message', error);
+          // Handle error scenario
+          $('#errorToast').toast('show');
+        }
+      );
   }
 }
-
