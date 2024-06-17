@@ -18,8 +18,8 @@
   href="https://fonts.googleapis.com/css?family=Raleway:600,900"
   rel="stylesheet"
 />
-
-<div class="gallery-image">
+<!-- ///Fetch from backend -->
+<!-- <div class="gallery-image">
   <div class="img-box" *ngFor="let image of images">
     <img
       [src]="'https://mayurcollegewebsite.onrender.com/uploads/' + image.image"
@@ -33,4 +33,24 @@
       </div>
     </div>
   </div>
+</div> -->
+
+
+<!-- manually add images  -->
+
+<div class="gallery-image">
+  <div class="img-box" *ngFor="let image of images">
+    <img
+      [src]="image.image"
+      alt="{{ image.title }}"
+    />
+
+    <div class="transparent-box">
+      <div class="caption">
+        <p>{{ image.title }}</p>
+        <p class="opacity-low">{{ image.description }}</p>
+      </div>
+    </div>
+  </div>
 </div>
+
