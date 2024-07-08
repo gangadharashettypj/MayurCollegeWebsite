@@ -1,212 +1,222 @@
-
-
 <app-banner [title]="'Director'"></app-banner>
-
-
-
 
 <section class="blog-single-section sp-three my-3">
   <div class="container">
-      <div class="row">
-          <div class="col-xl-10 col-sm-12">
-              <div class="left-side-area">
-                  <div class="blog-item-one">
-                     
-                      
-                  </div>
+    <div class="row">
+      <div class="col-xl-10 col-sm-12">
+        <div class="left-side-area">
+          <div class="blog-item-one"></div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-sm-12">
+        <html>
+          <head>
+            <title>Vertical Menu</title>
+            <link
+              href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
+              rel="stylesheet"
+              type="text/css"
+            />
+            <script
+              type="text/javascript"
+              src="https://code.jquery.com/jquery-2.0.0.min.js"
+            ></script>
 
-                
-                </div></div>
-          <div class="col-xl-2 col-sm-12">
-            <html><head>
-              <title>Vertical Menu</title> 
-              <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css' />
-              <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.0.min.js" ></script>
-              
-              <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet" />
-              <!--[if IE 7]>
-              <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.min.css" rel="stylesheet" />
-              <![endif]-->
-                
-              <script>
-              $(document).ready(function() {
-                $('ul.form li a').click(
-                  function(e) {
-                    e.preventDefault(); // prevent the default action
-                    e.stopPropagation; // stop the click from bubbling
-                    $(this).closest('ul').find('.selected').removeClass('selected');
-                    $(this).parent().addClass('selected');
-                  });
+            <link
+              href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css"
+              rel="stylesheet"
+            />
+            <!--[if IE 7]>
+              <link
+                href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.min.css"
+                rel="stylesheet"
+              />
+            <![endif]-->
+
+            <script>
+              $(document).ready(function () {
+                $("ul.form li a").click(function (e) {
+                  e.preventDefault(); // prevent the default action
+                  e.stopPropagation; // stop the click from bubbling
+                  $(this)
+                    .closest("ul")
+                    .find(".selected")
+                    .removeClass("selected");
+                  $(this).parent().addClass("selected");
+                });
               });
-              </script>	
-              <style>
+            </script>
+            <style>
               body {
-                
-                margin:0;
-                padding:0;
-                font-family:Quicksand;
-                font-weight:700;
+                margin: 0;
+                padding: 0;
+                font-family: Quicksand;
+                font-weight: 700;
               }
-            
+
               ul.form {
-                position:absolute;
-                 left:20px;
-                background:#fff;
-                width:200px;
-                            z-index:10;
-                margin:100;
-                padding:0;
+                position: absolute;
+                left: 20px;
+                background: #fff;
+                width: 200px;
+                z-index: 10;
+                margin: 100;
+                padding: 0;
                 list-style: none;
-                overflow:hidden;
-                
+                overflow: hidden;
+
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
-                border-radius: 5px;	
-                
+                border-radius: 5px;
+
                 -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
                 -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-                box-shadow:  10px 0px 10px rgba(0, 0, 0, 0.1);	
+                box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
               }
-            
+
               .form li a {
-                width:225px;
-                padding-left:15px;
-                height:40px;
-                line-height:40px;
-                display:block;
-                overflow:hidden;
-                position:relative;
-                text-decoration:none;
-                text-transform:uppercase;
-                font-size:12px;
-                color:#686868;
-                
-                -webkit-transition:all 0.1s linear;
-                -moz-transition:all 0.1s linear;
-                -o-transition:all 0.1s linear;
-                transition:all 0.2s linear;			
+                width: 225px;
+                padding-left: 15px;
+                height: 40px;
+                line-height: 40px;
+                display: block;
+                overflow: hidden;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #686868;
+
+                -webkit-transition: all 0.1s linear;
+                -moz-transition: all 0.1s linear;
+                -o-transition: all 0.1s linear;
+                transition: all 0.2s linear;
               }
-            
+
               .form li a:hover {
-                background:#efefef;
+                background: #efefef;
               }
-            
+
               .form li a.profile {
-                border-left:5px solid #008747;
+                border-left: 5px solid #008747;
               }
-            
+
               .form li a.messages {
-                  border-left:5px solid #fecf54;
+                border-left: 5px solid #fecf54;
               }
-                
+
               .form li a.settings {
-                  border-left:5px solid #cf2130;
+                border-left: 5px solid #cf2130;
               }
-            
+
               .form li a.logout {
-                  border-left:5px solid #FF3385;
-              }	
-            
-              .form li a.western {
-                  border-left:5px solid #0099FF;
-              }	
-            
-              .form li a.fantasy {
-                  border-left:5px solid #66FF99;
+                border-left: 5px solid #ff3385;
               }
-            
-              .form li:first-child a:hover, .form li:first-child a {
+
+              .form li a.western {
+                border-left: 5px solid #0099ff;
+              }
+
+              .form li a.fantasy {
+                border-left: 5px solid #66ff99;
+              }
+
+              .form li:first-child a:hover,
+              .form li:first-child a {
                 -webkit-border-radius: 5px 5px 0 0;
                 -moz-border-radius: 5px 5px 0 0;
                 border-radius: 5px 5px 0 0;
               }
-            
-              .form li:last-child a:hover, .form li:last-child a {
+
+              .form li:last-child a:hover,
+              .form li:last-child a {
                 -webkit-border-radius: 0 0 5px 5px;
                 -moz-border-radius: 0 0 5px 5px;
                 border-radius: 0 0 5px 5px;
               }
-            
+
               .form li a:hover i {
-                color:#ea4f35;
+                color: #ea4f35;
               }
-            
+
               .form i {
-                margin-right:15px;
-                
-                -webkit-transition:all 0.2s linear;
-                -moz-transition:all 0.2s linear;
-                -o-transition:all 0.2s linear;
-                transition:all 0.2s linear;	
+                margin-right: 15px;
+
+                -webkit-transition: all 0.2s linear;
+                -moz-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
               }
-            
+
               .form em {
                 font-size: 10px;
                 background: #ea4f35;
                 padding: 3px 5px;
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
-                border-radius: 10px;		
+                border-radius: 10px;
                 font-style: normal;
                 color: #fff;
                 margin-top: 17px;
                 margin-right: 15px;
                 line-height: 10px;
-                height: 10px;		
-                float:right;
+                height: 10px;
+                float: right;
               }
-            
+
               .form li.selected a {
-                background:#efefef;
+                background: #efefef;
               }
-            
+
               h1 {
-                color:#fff;
-                background-color: #1CB582!important;
-margin-left: 30px!important;
-                margin:0 auto;
-                margin-top:10px;
-                margin-bottom:40px;
-                font-size:30px;
-                
-                text-align:center;
+                color: #fff;
+                background-color: #1cb582 !important;
+                margin-left: 30px !important;
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-bottom: 40px;
+                font-size: 30px;
+
+                text-align: center;
               }
-              </style>	
-            </head>
-            
-            <body>
-            
-              
-              <ul class="form">
-             
-                <!-- <li><a class="messages" (click)="navigateToChairman();"> <i class="icon-envelope-alt"></i>Chairman's Message</a></li> -->
-                <!-- <li><a class="settings"routerLink="ceo"(click)="navigateToCeo();">  <i class="icon-envelope-alt"></i>CEO's Message</a></li>
+            </style>
+          </head>
+
+          <body>
+            <ul class="form">
+            <li><a class="messages" (click)="navigateToChairman();"> <i class="icon-envelope-alt"></i>Chairman's Message</a></li> 
+              <!-- <li><a class="settings"routerLink="ceo"(click)="navigateToCeo();">  <i class="icon-envelope-alt"></i>CEO's Message</a></li>
                 <li><a class="logout" routerLink="secretary"(click)="navigateToSecretary();">    <i class="icon-envelope-alt"></i>Secretary's Message</a></li> -->
-                <li><a class="western" routerLink="director"(click)="navigateToDirector();">    <i class="icon-envelope-alt"></i>Director's Message</a></li>
-                <li><a class="fantasy" routerLink="principal"(click)="navigateToPrincipal();">    <i class="icon-envelope-alt"></i>Principal's Message</a></li>
-              </ul>
-            
-            </body>
-            </html>
-          </div>
+              <li>
+                <a
+                  class="western"
+                  routerLink="director"
+                  (click)="navigateToDirector()"
+                >
+                  <i class="icon-envelope-alt"></i>Director's Message</a
+                >
+              </li>
+              <li>
+                <a
+                  class="fantasy"
+                  routerLink="principal"
+                  (click)="navigateToPrincipal()"
+                >
+                  <i class="icon-envelope-alt"></i>Principal's Message</a
+                >
+              </li>
+            </ul>
+          </body>
+        </html>
       </div>
+    </div>
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
 <div class="container my-5">
+  <h2><span class="principals mx-3">DIRECTOR'S</span> MESSAGE</h2>
 
-    <h2><span class="principals mx-3">DIRECTOR'S</span> MESSAGE</h2>
-
-<!-- <div class="principal d-flex justify-content-center my-4">
+  <!-- <div class="principal d-flex justify-content-center my-4">
 
 <img src="assets/admin.png" width="10%" class="princi"data-aos="fade-right" data-aos-duration="2000">
 <div class="div mx-3"data-aos="fade-left" data-aos-duration="2000" >
@@ -216,42 +226,71 @@ margin-left: 30px!important;
 
 </div> -->
 
-<div class="container message my-4 mx-3"data-aos="fade-up" data-aos-duration="2000">
-    <p class="text-justify">Welcome to Mayur College of Pharmacy!
+  <div
+    class="container message my-4 mx-3"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
+    <p class="text-justify">
+      The internet serves as a crucial communication channel between you and our
+      institute. By visiting our website, you can access information and updates
+      about activities at Mayur College of Pharmacy. The site also provides
+      details about our departments, lecturers, proctors, infrastructure, and
+      events. Selecting a college is one of the most challenging and significant
+      decisions a parent can make, considering its impact on their ward's
+      future. We commend the parents who have chosen Mayur College of Pharmacy
+      for their children's education. Your involvement, dear parents, is vital
+      in transforming our good college into a great one. 
+      <br>
+      I encourage parents to motivate their children to reach their full potential and support their
+      educational journey. Please maintain regular communication with the
+      faculty to monitor your children's progress and help set new goals for
+      success. An educational institution's primary goals are character
+      development, intellectual enrichment, and lifelong learning experiences.
+      Life is a journey of experiences and learning, rather than just a series
+      of instructions. Mayur College of Pharmacy aims to change the world by
+      fostering a love for learning. To compete globally, our graduates need to
+      possess knowledge, analytical skills, and communication abilities.
+      Ensuring every student acquires the skills necessary for industry success
+      is our challenge. <br>To support students in achieving this goal, the
+      institute offers professional development programs that enhance their
+      abilities, dispositions, and aptitudes for the placement process. I wish
+      every student success in all their endeavors.
 
-      Our mission is to provide an excellent education in pharmacy, combining quality teaching with practical experience. We aim to develop skilled, ethical, and compassionate professionals who will make significant contributions to healthcare.
-      
-      Our dedicated faculty, state-of-the-art facilities, and strong emphasis on research and community service ensure a comprehensive learning experience for our students.
-      
-      Thank you for choosing Mayur College of Pharmacy. We are excited to support you on your journey to becoming a leader in the field of pharmacy.
-      
-        <br><br>
-        Mr. M Basavayya
-        <br>
-         Director,<br>
-Mayur College of Pharmacy
-        
+      <br /><br />
+      <!-- Mr. M Basavayya -->
+      <br />
+      Director,<br />
+      Mayur College of Pharmacy
+    </p>
+  </div>
 </div>
-</div>
-
-
-
-
 
 <div class="container vm">
-    <table class="table table-bordered table-striped table-hover">
-      <thead class="thead-light">
-        <tr>
-          <th class="text-center">Vision</th>
-          <th class="text-center">Mission</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-aos="flip-right" data-aos-duration="2000">To provide the students with knowledge, skills, values and sensitivity to face the challenges in life both in academic field as well as in their personal life. To develop the human potentials to achieve different opportunities in future. To enhance the new teaching learning process for students, faculties and staffs.</td>
-          <td data-aos="flip-left" data-aos-duration="2000">To become a "Centre of excellence" by providing quality and research oriented Pharmacy education to meet the needs of the industry, community and other stake holders through continuous training and up-gradation of infrastructure of learning and practicing Pharmacy profession.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th class="text-center">Vision</th>
+        <th class="text-center">Mission</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-aos="flip-right" data-aos-duration="2000">
+          To provide the students with knowledge, skills, values and sensitivity
+          to face the challenges in life both in academic field as well as in
+          their personal life. To develop the human potentials to achieve
+          different opportunities in future. To enhance the new teaching
+          learning process for students, faculties and staffs.
+        </td>
+        <td data-aos="flip-left" data-aos-duration="2000">
+          To become a "Centre of excellence" by providing quality and research
+          oriented Pharmacy education to meet the needs of the industry,
+          community and other stake holders through continuous training and
+          up-gradation of infrastructure of learning and practicing Pharmacy
+          profession.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
