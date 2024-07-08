@@ -28,4 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 npm run build --prod --base-href="https://gangadharashettypj.github.io/MayurCollegeWebsite/"
 
+npm run build --prod --base-href="https://mayurcop.ac.in"
+
 npx angular-cli-ghpages --dir=dist/nursing
