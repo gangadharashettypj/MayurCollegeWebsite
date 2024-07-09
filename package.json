@@ -1,7 +1,7 @@
 {
   "name": "nursing",
   "version": "0.0.0",
-  "homepage": "https://gangadharashettypj.github.io/MayurCollegeWebsite",
+  "homepage": "https://mayurcop.ac.in",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
