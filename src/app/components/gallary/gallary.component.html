@@ -36,9 +36,9 @@
 </div> -->
 
 
-<!-- manually add images  -->
+<!-- manually add images  with description-->  
 
-<div class="gallery-image">
+<!-- <div class="gallery-image">
   <div class="img-box" *ngFor="let image of images">
     <img
       [src]="image.image"
@@ -52,5 +52,23 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
+  
+<!-- manually add images  without title and description -->
+
+<div class="gallery-image">
+  <div class="img-box" *ngFor="let image of images">
+    <img
+      [src]="image.image"
+      alt="image"
+    />
+
+    <div class="transparent-box">
+      <div class="caption">
+        <p></p>
+        <p class="opacity-low"></p>
+      </div>
+    </div>
+  </div>
+</div>
