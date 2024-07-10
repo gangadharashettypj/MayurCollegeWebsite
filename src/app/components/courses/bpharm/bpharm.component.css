@@ -44,4 +44,14 @@
     th {
       font-weight: bold;
     }
- 
+    .responsive-image {
+      max-width: 100%;  /* Prevents the image from exceeding the width of its container */
+      height: auto;     /* Maintains the aspect ratio of the image */
+      display: block;   /* Removes any extra space at the bottom of the image */
+      margin: 0 auto;   /* Centers the image horizontally */
+    }
+
+    
+
+
+
