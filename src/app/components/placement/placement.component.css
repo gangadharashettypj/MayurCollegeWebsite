@@ -36,34 +36,44 @@
 
 
 	
-	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
-	  .container {
-		margin-top: 30px;
-	  }
-	  .course-image {
-		text-align: center;
-		margin-bottom: 20px;
-	  }
-	  .course-image img {
-	   
-		height: auto;
-		border-radius: 10px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	  }
-	  p{
-		font-family: 'Roboto', sans-serif;
-	  
-	  }
-	  h2{
-		  font-family: bebas neue;
-		  color: #1CB582;
-	  }
+	/* Importing necessary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
+/* Styling for the container to add top margin */
+.container {
+    margin-top: 30px;
+}
 
-	  .responsive-image {
-		max-width: 100%;  /* Prevents the image from exceeding the width of its container */
-		height: auto;     /* Maintains the aspect ratio of the image */
-		display: block;   /* Removes any extra space at the bottom of the image */
-		margin: 0 auto;   /* Centers the image horizontally */
-	  }
+/* Centering and adding margin to the course image container */
+.course-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ensuring the image is responsive, maintains aspect ratio, has rounded corners and shadow */
+.course-image img {
+    width: 100%; /* Makes the image take full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds shadow to the image */
+}
+
+/* Applying Roboto font to paragraphs */
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Applying Bebas Neue font to headings and setting color */
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #1CB582;
+}
+
+/* Ensuring the image is responsive */
+.responsive-image {
+    max-width: 100%;  /* Prevents the image from exceeding the width of its container */
+    height: auto;     /* Maintains the aspect ratio of the image */
+    display: block;   /* Removes any extra space at the bottom of the image */
+    margin: 0 auto;   /* Centers the image horizontally */
+}
