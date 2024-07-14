@@ -1,4 +1,4 @@
-// For fetching images from backend
+//For fetching images from backend
 
 // import { HttpClient } from '@angular/common/http';
 // import { Component } from '@angular/core';
@@ -27,6 +27,7 @@
 //   }
 // }
 
+// manually adding
 import { Component } from '@angular/core';
 
 @Component({

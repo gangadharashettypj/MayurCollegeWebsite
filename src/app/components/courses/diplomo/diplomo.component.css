@@ -1,46 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
-    .container {
-      margin-top: 30px;
-    }
-    .course-image {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .course-image img {
-     
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-    p{
-      font-family: 'Roboto', sans-serif;
+.container {
+  margin-top: 30px;
+  padding: 0 15px; /* Adjusted padding for responsiveness */
+}
 
-    }
-    h2{
-        font-family: bebas neue;
-        color: #1CB582;
-    }
-    .syllabus {
-        margin-top: 30px;
-      }
-      .syllabus h4 {
-        margin-bottom: 10px;
-      }
-      table {
-        width: 100%;
-        margin-top: 20px;
-      }
-      th,
-      td {
-        padding: 8px;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
- 
-        border-bottom: 1px solid #ddd;
-      }
-      th {
-        font-weight: bold;
-      }
-   
+.course-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-image img {
+  width: 100%; /* Ensure images are responsive */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #1CB582;
+}
+
+.pdf-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.pdf-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pdf-button i {
+  margin-right: 10px;
+}
+
+.apply-now-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.apply-now-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .pdf-button,
+  .apply-now-button {
+    width: 100%; /* Make buttons full-width on smaller screens */
+    max-width: 100%; /* Ensure buttons are not larger than the container */
+  }
+}

@@ -1,57 +1,85 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@800&display=swap');
-  .container {
-    margin-top: 30px;
-  }
-  .course-image {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+
+/* General styling */
+.container {
+  margin-top: 30px;
+}
+
+.course-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #1CB582;
+}
+
+@media (max-width: 768px) {
   .course-image img {
-   
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
   }
-  p{
-    font-family: 'Roboto', sans-serif;
-  
+
+  .pdf-button,
+  .apply-now-button {
+    width: 100%;
+    max-width: 100%;
   }
-  h2{
-      font-family: bebas neue;
-      color: #1CB582;
-  }
-  .syllabus {
-      margin-top: 30px;
-    }
-    .syllabus h4 {
-      margin-bottom: 10px;
-    }
-    table {
-      width: 100%;
-      margin-top: 20px;
-    }
-    th,
-    td {
-      padding: 8px;
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-     
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      font-weight: bold;
-    }
-    .responsive-image {
-      max-width: 100%;  /* Prevents the image from exceeding the width of its container */
-      height: auto;     /* Maintains the aspect ratio of the image */
-      display: block;   /* Removes any extra space at the bottom of the image */
-      margin: 0 auto;   /* Centers the image horizontally */
-    }
+}
 
-    
+/* Styling for buttons */
+.pdf-button {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
 
+.pdf-button a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
+.pdf-button i {
+  margin-bottom: 5px; /* Space between icon and text */
+}
 
+.apply-now-button {
+  display: block;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.apply-now-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  color: white;
+  text-decoration: none;
+}

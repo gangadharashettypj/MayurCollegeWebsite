@@ -29,3 +29,37 @@
       display: block;   /* Removes any extra space at the bottom of the image */
       margin: 0 auto;   /* Centers the image horizontally */
     }
+
+    /* sliding cards css */
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .custom-img {
+      height: 400px; /* Adjust height as per your design */
+      object-fit: cover; /* Ensures the image covers the entire area */
+      object-position: center; /* Centers the image within the container */
+    }
+    
+    
+    .carousel-item {
+      padding: 20px;
+    }
+    
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: #000; /* Example color for carousel control icons */
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+      width: auto;
+      background-color: transparent;
+    }
+    
+    .carousel-control-prev {
+      left: -30px;
+    }
+    
+    .carousel-control-next {
+      right: -30px;
+    }
+    

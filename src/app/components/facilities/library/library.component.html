@@ -1,4 +1,55 @@
-<app-banner [title]="'Library'"></app-banner>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 text-center mb-4">
+      <h2>Library Section</h2>
+    </div>
+  </div>
+
+  <div id="libraryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let library of libraries; let i = index" class="carousel-item" [class.active]="i === 0">
+        <div class="card h-100 shadow-sm">
+          <img [src]="library.image" class="card-img-top custom-img" alt="{{ library.name }}">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ library.name }}</h5>
+            <p class="card-text">{{ library.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----Original Code -->
+<!-- <app-banner [title]="'Library'"></app-banner>
 <div class="container">
     <h2 class="text-center my-4"></h2>
 
@@ -62,4 +113,6 @@
               
     
           </div>
-        </div>
+        </div> -->
+
+<!--Original code upto here-->

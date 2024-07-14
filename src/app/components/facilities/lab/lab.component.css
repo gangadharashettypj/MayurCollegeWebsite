@@ -4,6 +4,10 @@
     .container {
       margin-top: 30px;
     }
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: cover;
+    }
     .course-image {
       text-align: center;
       margin-bottom: 20px;
@@ -22,3 +26,60 @@
         font-family: bebas neue;
         color: #1CB582;
     }
+
+    /* css for new layout */
+    /* 2*/
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+   /* ---3-----*/
+    /* .card-img-top {
+      height: 100%; 
+      width: 100%; 
+      object-fit: cover; 
+    }
+    
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+     */
