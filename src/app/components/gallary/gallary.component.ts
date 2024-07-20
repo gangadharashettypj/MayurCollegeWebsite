@@ -38,15 +38,22 @@ import { Component } from '@angular/core';
 export class GallaryComponent {
   images = [
     {
+     image: 'https://dl.dropboxusercontent.com/scl/fi/ii5d8ti703neiomn8rkdu/g3.jpg?rlkey=apqoua7lfbskok4rdlb01izcg&st=ywudzr53&dl=0',
+    },
+    {
+      image: 'https://dl.dropboxusercontent.com/scl/fi/xgy1xk35b32ya8d40izzo/g2.jpg?rlkey=3rm00d4v92ry1vrjsx2hd9bmt&st=fi5iwrfi&dl=0',
+     },
+     {
+      image: 'https://dl.dropboxusercontent.com/scl/fi/842hdpjs30hehy66geiri/classroom.JPG?rlkey=qz0ea347xxa3z7sp5nbql04h7&st=rqwth3xg&dl=0',
+
+      // description: 'Description for photo 2'
+    },
+    {
       image: 'https://dl.dropboxusercontent.com/s/wbcwfk0r50otd19k6is7j/galley-2.JPG?rlkey=l51ln3nil1mlvxibtm1zl20x0&st=1nrnjdpi',
       // title: 'Photo 1',
       // description: 'Description for photo 1'
     },
-    {
-      image: 'https://dl.dropboxusercontent.com/s/qjjkzuwadj7igser225at/galley-1.JPG?rlkey=u67a8oy9ahi2ie70ewbces4lt&st=7vlzeq0u',
-      // title: 'Photo 2222',
-      // description: 'Description for photo 2'
-    },
+    
     {
       image: 'https://dl.dropboxusercontent.com/s/xjzw1bqqdtnq4oms83ql6/gallery-3.JPG?rlkey=gzgu61lstxuyvgq09cl8g0zxd&st=0zgg2n92',
       // title: 'Photo 3',
@@ -77,11 +84,39 @@ export class GallaryComponent {
       // title: 'Photo 8',
       // description: 'Description for photo 2'
     },
+    
     {
-      image: 'https://dl.dropboxusercontent.com/s/vnmxbdhekuwxpwakc40z7/gallery-9.JPG?rlkey=8yqfddpdk4npb6l2jtj6k0t85&st=rw81w588',
+      image :'https://dl.dropboxusercontent.com/s/qjjkzuwadj7igser225at/galley-1.JPG?rlkey=u67a8oy9ahi2ie70ewbces4lt&st=7vlzeq0u'
+    },
+    {
+      image: 'https://dl.dropboxusercontent.com/scl/fi/59yhfuhu9fxpax5ejkwjf/g10.jpeg?rlkey=qoxono012s7t7ufuwchbqva5n&st=aiekrce1&dl=0',
       // title: '',
       // description: ''
-    }
+    },
+    {
+      image: '',
+     },
+     {
+      image: '',
+     },
+     {
+      image: '',
+     },
+     {
+      image: '',
+     },
+     {
+      image: '',
+     },
+     {
+      image: '',
+     },
+     {
+      image: '',
+     },
+     {
+      image: '',
+     },
     // Add more images as needed
   ];
 }
